@@ -1,0 +1,155 @@
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+@tailwind components;
+@tailwind utilities;
+
+.background-pattern {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23e5e7eb' fill-opacity='0.4' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.title {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.signup-buttons {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+.signup-buttons > button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+}
+.create-button {
+  background-color: #33495e;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.google-button {
+  background-color: #26272b;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.create-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  height: 100vh;
+  font-family: Inter;
+}
+.create-form {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 50px 0px 50px 0;
+  border-radius: 20px;
+  border-style: solid;
+  opacity: 1;
+  border-color: rgb(127, 127, 127);
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top:10px;
+}
+.login-div {
+  color: blue;
+  text-decoration: underline;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.email {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.email-input {
+  margin-bottom: 15px;
+  background-color: rgb(20,20,20);
+  border-style: solid;
+  border-color: gray;
+  border-width: 3px;
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.email-input:focus {
+  outline: none;
+  border-style: solid;
+  border-color: #0056eb;
+  font-size: 16px;
+}
+.enter-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.password-box {
+  display: flex;
+  flex-direction: column;
+}
+.password {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.password-input {
+  background-color: rgb(20,20,20);
+  border: none;
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  border-color: rgb(165, 165, 165);
+  border-style: solid;
+}
+.password-input:focus {
+  outline: none;
+  font-size: 16px;
+  border-color: #0056eb;
+  border-style: solid;
+}
+.enter-password {
+  display: flex;
+  margin-bottom: 15px;
+  background-color: rgb(0, 0, 0);
+  border-style: solid;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  position: relative;
+}
+.show-password {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+}
